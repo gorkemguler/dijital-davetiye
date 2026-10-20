@@ -1,0 +1,16 @@
+/* Botanik — okaliptüs dalları, adaçayı yeşili */
+body.dv[data-tpl="botanik"] {
+  --radius: 24px;
+  --head-size: clamp(2.2rem, 8vw, 2.9rem);
+  background-image:
+    radial-gradient(42% 30% at 0% 0%, color-mix(in srgb, var(--accent) 55%, transparent), transparent 70%),
+    radial-gradient(40% 28% at 100% 100%, color-mix(in srgb, var(--accent) 45%, transparent), transparent 70%);
+  background-attachment: fixed;
+}
+[data-tpl="botanik"] .dc-corner { width: 120px; height: 120px; opacity: .9; }
+[data-tpl="botanik"] .dc-corner.br { bottom: -10px; right: -18px; }
+[data-tpl="botanik"] .dc-corner.tl, [data-tpl="botanik"] .dc-corner.tr, [data-tpl="botanik"] .dc-corner.bl { display: none; }
+[data-tpl="botanik"] .names { color: color-mix(in srgb, var(--primary) 55%, var(--text)); }
+[data-tpl="botanik"] .ev { background: color-mix(in srgb, var(--surface) 85%, transparent); }
+[data-tpl="botanik"] .sec-title { font-style: italic; font-weight: 400; }
+[data-tpl="botanik"] .cd-u { border-radius: 999px 999px 18px 18px; padding-top: 22px; }

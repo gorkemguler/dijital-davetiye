@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Davetiye Editörü · Dijital Davetiye</title>
+  <meta name="description" content="Ücretsiz ve açık kaynak dijital düğün davetiyesi oluşturucu.">
+  <meta name="theme-color" content="#f6f3ef">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="assets/css/editor.css">
+  <script src="site.config.js"></script>
+</head>
+<body class="ed">
+  <header class="ed-top">
+    <a class="brand" href="index.html" title="Ana sayfa">
+      <img src="assets/img/favicon.svg" alt="" width="28" height="28">
+      <span>Dijital Davetiye</span>
+    </a>
+    <p class="ed-status" id="saveStatus" role="status" aria-live="polite"></p>
+    <div class="ed-top-actions">
+      <button type="button" class="tbtn" data-action="project-new" title="Boş davetiye">Yeni</button>
+      <button type="button" class="tbtn" data-action="project-open" title="Proje dosyası aç">Aç</button>
+      <button type="button" class="tbtn" data-action="project-save" title="Proje dosyasını kaydet (Ctrl/Cmd+S)">Kaydet</button>
+      <button type="button" class="tbtn tbtn-primary" data-action="goto" data-tab="yayinla">Yayınla</button>
+    </div>
+    <input type="file" id="fileOpen" accept=".json,application/json" hidden>
+  </header>
+
+  <div class="ed-main">
+    <nav class="ed-nav" id="nav" aria-label="Editör bölümleri"></nav>
+
+    <section class="ed-panel" id="panel" aria-live="off"></section>
+
+    <aside class="ed-preview" id="previewPane" aria-label="Canlı önizleme">
+      <div class="pv-bar">
+        <div class="seg-s" role="group" aria-label="Cihaz">
+          <button type="button" class="active" data-action="pv-device" data-device="phone" title="Telefon">Telefon</button>
+          <button type="button" data-action="pv-device" data-device="desktop" title="Masaüstü">Masaüstü</button>
+        </div>
+        <select id="pvGroup" class="sm" title="Hangi misafir grubunun gözünden önizlensin?"></select>
+        <input id="pvGuest" class="sm" type="text" placeholder="Misafir adı (önizleme)" title="Kişiye özel bağlantı önizlemesi">
+        <button type="button" class="ib" data-action="pv-envelope" title="Zarf animasyonunu oynat">✉</button>
+        <button type="button" class="ib pv-close" data-action="pv-close" title="Önizlemeyi kapat">✕</button>
+      </div>
+      <div class="pv-stage" id="pvStage">
+        <div class="pv-device phone" id="pvDevice">
+          <iframe id="pv" title="Davetiye önizlemesi"></iframe>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <button type="button" class="pv-fab" data-action="pv-open">Önizle</button>
+  <div class="ed-toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="assets/js/core.js"></script>
+  <script src="assets/js/templates.js"></script>
+  <script src="assets/js/editor/app.js"></script>
+  <script src="assets/js/editor/tabs.js"></script>
+  <script src="assets/js/editor/map.js"></script>
+  <script src="assets/js/editor/publish.js"></script>
+  <script>DV.ed.start();</script>
+</body>
+</html>

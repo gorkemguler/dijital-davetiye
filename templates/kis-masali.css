@@ -1,0 +1,18 @@
+/* Kış Masalı — buz mavisi, gümüş, kar */
+body.dv[data-tpl="kis-masali"] {
+  --radius: 20px;
+  --head-size: clamp(2.1rem, 8vw, 2.8rem);
+  background-image:
+    radial-gradient(ellipse 100% 60% at 50% 0%, color-mix(in srgb, var(--bg) 40%, #ffffff), transparent 70%),
+    radial-gradient(ellipse 60% 40% at 0% 100%, color-mix(in srgb, var(--accent) 60%, transparent), transparent 70%);
+  background-attachment: fixed;
+}
+[data-tpl="kis-masali"] .fx--snow { z-index: 3; }
+[data-tpl="kis-masali"] .names { color: color-mix(in srgb, var(--primary) 60%, var(--text)); }
+[data-tpl="kis-masali"] .sec-title { font-style: italic; }
+[data-tpl="kis-masali"] .ev, [data-tpl="kis-masali"] .cd-u, [data-tpl="kis-masali"] .rsvp-card, [data-tpl="kis-masali"] .info-card {
+  background: color-mix(in srgb, var(--surface) 72%, transparent);
+  -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
+  border-color: color-mix(in srgb, var(--primary) 22%, #ffffff);
+}
+[data-tpl="kis-masali"] .hero--circle .hero-photo img { box-shadow: 0 0 0 6px #fff, 0 0 0 7px var(--accent), 0 20px 50px -20px var(--primary); }

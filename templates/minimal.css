@@ -1,0 +1,25 @@
+/* Minimal Modern — siyah/beyaz, güçlü tipografi */
+body.dv[data-tpl="minimal"] {
+  --radius: 0;
+  --btn-radius: 0;
+  --names-size: clamp(2.8rem, 12.5vw, 5rem);
+  --head-size: clamp(1.25rem, 4.8vw, 1.6rem);
+  --head-weight: 400;
+  --head-transform: uppercase;
+  --head-spacing: .24em;
+  --kicker-spacing: .5em;
+  --shadow: none;
+  --line: color-mix(in srgb, var(--text) 18%, transparent);
+  --line-soft: color-mix(in srgb, var(--text) 9%, transparent);
+}
+[data-tpl="minimal"] .names { text-transform: uppercase; letter-spacing: .03em; line-height: .98; }
+[data-tpl="minimal"] .names .amp { font-style: italic; text-transform: none; font-size: .42em; margin: .2em 0; color: var(--muted); }
+[data-tpl="minimal"] .greet, [data-tpl="minimal"] .quote, [data-tpl="minimal"] .signature { font-style: italic; }
+[data-tpl="minimal"] .kicker { color: var(--muted); }
+[data-tpl="minimal"] .sec + .sec::before { width: 100%; max-width: 120px; height: 1px; background: var(--line); }
+[data-tpl="minimal"] .dc-divider { width: 36px; margin: 18px auto 30px; }
+[data-tpl="minimal"] .hero-date { font-family: var(--f-body); font-size: .82rem; letter-spacing: .3em; text-transform: uppercase; }
+[data-tpl="minimal"] .ev { border-left: 0; border-right: 0; }
+[data-tpl="minimal"] .evs--timeline .ev-datebox { border-radius: 0; }
+[data-tpl="minimal"] .cd-u { border: 0; border-top: 1px solid var(--text); background: transparent; }
+[data-tpl="minimal"] .btn { letter-spacing: .2em; }

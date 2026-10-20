@@ -1,0 +1,17 @@
+/* Gece Mavisi — lacivert gece, altın yıldızlar */
+body.dv[data-tpl="gece-mavisi"] {
+  --head-transform: uppercase;
+  --head-spacing: .16em;
+  --head-size: clamp(1.35rem, 5.4vw, 1.85rem);
+  --names-size: clamp(3.4rem, 15vw, 5.6rem);
+  --shadow: 0 20px 50px -30px rgba(0, 0, 0, .8);
+  background-image:
+    radial-gradient(ellipse 90% 55% at 50% -5%, color-mix(in srgb, var(--bg) 60%, #6d8fd6), transparent 70%),
+    radial-gradient(ellipse 60% 40% at 100% 100%, color-mix(in srgb, var(--bg) 70%, #3b5aa3), transparent 70%);
+  background-attachment: fixed;
+}
+[data-tpl="gece-mavisi"] .names .amp { color: var(--accent); font-family: var(--f-head); font-size: .32em; margin: .3em 0; }
+[data-tpl="gece-mavisi"] .ev { background: color-mix(in srgb, var(--surface) 75%, transparent); -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px); }
+[data-tpl="gece-mavisi"] .hero--circle .hero-photo img { box-shadow: 0 0 0 6px var(--bg), 0 0 0 7px var(--primary), 0 0 60px -10px var(--primary); }
+[data-tpl="gece-mavisi"] .cd-u { background: color-mix(in srgb, var(--surface) 70%, transparent); }
+[data-tpl="gece-mavisi"] .fld input[type=text], [data-tpl="gece-mavisi"] .fld textarea, [data-tpl="gece-mavisi"] .stepper input { background: color-mix(in srgb, var(--bg) 70%, #000); }

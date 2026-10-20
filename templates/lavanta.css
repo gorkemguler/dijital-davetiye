@@ -1,0 +1,14 @@
+/* Lavanta Bahçesi — Provence lavantaları, lila tonlar */
+body.dv[data-tpl="lavanta"] {
+  --radius: 22px;
+  --head-size: clamp(2rem, 7.6vw, 2.6rem);
+  background-image:
+    radial-gradient(40% 30% at 100% 0%, color-mix(in srgb, var(--accent) 30%, transparent), transparent 70%),
+    radial-gradient(45% 30% at 0% 100%, color-mix(in srgb, var(--accent) 26%, transparent), transparent 70%);
+  background-attachment: fixed;
+}
+[data-tpl="lavanta"] .names { color: color-mix(in srgb, var(--primary) 75%, var(--text)); }
+[data-tpl="lavanta"] .dc-top { width: min(250px, 70%); }
+[data-tpl="lavanta"] .sec-title { font-weight: 400; }
+[data-tpl="lavanta"] .ev { background: color-mix(in srgb, var(--surface) 86%, transparent); }
+[data-tpl="lavanta"] .ev-icon, [data-tpl="lavanta"] .info-card .info-ic { background: color-mix(in srgb, var(--accent) 18%, var(--surface)); }

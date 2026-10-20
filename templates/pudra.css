@@ -1,0 +1,21 @@
+/* Pudra Pembe — romantik pudra tonları, suluboya çiçekler */
+body.dv[data-tpl="pudra"] {
+  --radius: 26px;
+  --head-size: clamp(2rem, 7.6vw, 2.7rem);
+}
+body.dv[data-tpl="pudra"]::before {
+  content: ''; position: fixed; inset: -10%; z-index: 0; pointer-events: none;
+  background:
+    radial-gradient(38% 28% at 4% 6%, color-mix(in srgb, var(--accent) 75%, transparent), transparent 70%),
+    radial-gradient(30% 22% at 96% 14%, color-mix(in srgb, var(--primary) 26%, transparent), transparent 70%),
+    radial-gradient(36% 26% at 96% 96%, color-mix(in srgb, var(--accent) 60%, transparent), transparent 70%),
+    radial-gradient(26% 20% at 6% 90%, color-mix(in srgb, var(--primary) 18%, transparent), transparent 70%);
+  filter: blur(14px);
+}
+[data-tpl="pudra"] .dc-corner { width: 96px; height: 96px; }
+[data-tpl="pudra"] .dc-corner.tl { top: -18px; left: -14px; }
+[data-tpl="pudra"] .dc-corner.br { bottom: -6px; right: -14px; }
+[data-tpl="pudra"] .dc-corner.tr, [data-tpl="pudra"] .dc-corner.bl { display: none; }
+[data-tpl="pudra"] .sec-title { font-style: italic; }
+[data-tpl="pudra"] .names { color: color-mix(in srgb, var(--primary) 70%, var(--text)); }
+[data-tpl="pudra"] .ev { background: color-mix(in srgb, var(--surface) 82%, transparent); }

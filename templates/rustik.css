@@ -1,0 +1,25 @@
+/* Rustik Kraft — kraft kağıt, ip ışıklar, kır düğünü */
+body.dv[data-tpl="rustik"] {
+  --radius: 6px;
+  --btn-radius: 6px;
+  --head-weight: 700;
+  --head-size: clamp(2.4rem, 9.5vw, 3.2rem);
+  --head-spacing: .04em;
+  --names-size: clamp(3.6rem, 16vw, 5.8rem);
+  --shadow: 0 10px 24px -18px rgba(60, 40, 20, .6);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='260'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.35 0 0 0 0 0.24 0 0 0 0 0.12 0 0 0 0.16 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+[data-tpl="rustik"] .dc-top { width: min(340px, 96%); }
+[data-tpl="rustik"] .names { font-weight: 600; }
+[data-tpl="rustik"] .names .amp { font-size: .45em; }
+[data-tpl="rustik"] .ev, [data-tpl="rustik"] .rsvp-card, [data-tpl="rustik"] .info-card, [data-tpl="rustik"] .acct, [data-tpl="rustik"] .contact {
+  border: 1.5px dashed color-mix(in srgb, var(--primary) 45%, transparent);
+  outline: 6px solid var(--surface); outline-offset: -1px;
+  margin: 6px;
+}
+[data-tpl="rustik"] .cd-u { border-style: dashed; }
+[data-tpl="rustik"] .evs--timeline .ev { outline: 0; border: 0; margin: 0; }
+[data-tpl="rustik"] .hero--arch .hero-photo img { border: 6px solid var(--surface); box-shadow: var(--shadow); }
+[data-tpl="rustik"] .hero--arch .hero-photo::after { border-style: dashed; }
+[data-tpl="rustik"] .kicker, [data-tpl="rustik"] .city-title { font-weight: 600; }
+[data-tpl="rustik"] .hero-date { font-family: var(--f-head); font-weight: 700; font-size: clamp(1.5rem, 6.4vw, 1.9rem); letter-spacing: .06em; }

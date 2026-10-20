@@ -1,0 +1,23 @@
+/* Ege Mavisi — Akdeniz beyazı, kobalt, zeytin dalları */
+body.dv[data-tpl="ege"] {
+  --radius: 14px;
+  --head-size: clamp(1.75rem, 6.6vw, 2.3rem);
+  --head-weight: 400;
+  background-image:
+    linear-gradient(180deg, color-mix(in srgb, var(--primary) 6%, transparent), transparent 40%);
+}
+[data-tpl="ege"] .names { color: var(--primary); }
+[data-tpl="ege"] .names .amp { color: var(--accent); }
+[data-tpl="ege"] .dc-top { color: var(--accent); }
+[data-tpl="ege"] .dc-divider { color: var(--accent); }
+[data-tpl="ege"] .hero::after {
+  content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 26px;
+  background: color-mix(in srgb, var(--primary) 9%, transparent);
+  -webkit-mask: radial-gradient(14px 12px at 50% 100%, #000 98%, transparent) repeat-x 0 0 / 28px 26px;
+  mask: radial-gradient(14px 12px at 50% 100%, #000 98%, transparent) repeat-x 0 0 / 28px 26px;
+}
+[data-tpl="ege"] .ev { border-top: 4px solid var(--primary); }
+[data-tpl="ege"] .ev-icon { background: var(--primary); color: #fff; border-color: var(--primary); }
+[data-tpl="ege"] .cd-u { background: var(--primary); border-color: var(--primary); }
+[data-tpl="ege"] .cd-u b, [data-tpl="ege"] .cd-u span { color: #fff; }
+[data-tpl="ege"] .cd-u span { opacity: .8; }

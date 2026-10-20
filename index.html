@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dijital Davetiye · Ücretsiz Düğün Davetiyesi Oluşturucu</title>
+  <meta name="description" content="Kına, nikah, düğün, gelin alma, after party… Tüm programınızı tek bir şık dijital davetiyede toplayın. Ücretsiz ve açık kaynak.">
+  <meta property="og:title" content="Dijital Davetiye — ücretsiz düğün davetiyesi oluşturucu">
+  <meta property="og:description" content="Şablon seçin, etkinlikleri ve konumları ekleyin, bağlantıyı paylaşın. Kurulum gerektirmez.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://gorkemguler.github.io/dijital-davetiye/docs/screenshots/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#f7f1e6">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <script src="site.config.js"></script>
+  <script>
+    // Kısa bağlantılar ve site.config.js yönlendirmeleri
+    (function () {
+      var s = window.DV_SITE || {}, q = location.search, h = location.hash;
+      if (/[?&]d=/.test(q) || /^#(data=)?[zj]\./.test(h)) { location.replace('davetiye.html' + q + h); return; }
+      if (s.home === 'invite') location.replace('davetiye.html' + (q || (s.defaultInvitation ? '?d=' + encodeURIComponent(s.defaultInvitation) : '')) + h);
+      else if (s.home === 'editor') location.replace('editor.html');
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Great+Vibes&display=swap">
+  <link rel="stylesheet" href="assets/css/landing.css">
+</head>
+<body class="ld">
+  <header class="ld-nav">
+    <a class="brand" href="./"><img src="assets/img/favicon.svg" alt="" width="30" height="30"> Dijital Davetiye</a>
+    <nav>
+      <a href="#ozellikler">Özellikler</a>
+      <a href="#sablonlar">Şablonlar</a>
+      <a href="#nasil">Nasıl çalışır?</a>
+      <a class="gh" id="ghLink" href="#" hidden>GitHub</a>
+      <a class="btn sm" href="editor.html">Davetiye oluştur</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-txt">
+        <p class="eyebrow">Ücretsiz · Açık kaynak · Kurulum yok</p>
+        <h1>Düğün davetiyeniz,<br><em>cebinizde.</em></h1>
+        <p class="lead">Kına gecesinden after party'ye, tek ilde ya da iki ilde düğün… Tüm programınızı, saatleri ve haritadan yol tarifini tek bir şık dijital davetiyede toplayın. Misafirlerinize WhatsApp'tan gönderin.</p>
+        <div class="cta">
+          <a class="btn" href="editor.html">Davetiyeni oluştur</a>
+          <a class="btn ghost" href="davetiye.html?d=ornek&amp;to=Ahmet%20Bey">Örnek davetiyeyi aç</a>
+        </div>
+        <ul class="ticks">
+          <li>12 şablon</li><li>Haritadan konum</li><li>Kişiye özel bağlantı</li><li>LCV toplama</li>
+        </ul>
+      </div>
+      <div class="hero-vis" aria-hidden="true">
+        <div class="phone"><iframe src="davetiye.html?d=ornek&amp;to=Ahmet%20Bey" title="Örnek davetiye" loading="lazy" tabindex="-1"></iframe></div>
+      </div>
+    </section>
+
+    <section class="sec" id="ozellikler">
+      <h2>Aklınıza gelebilecek her şey</h2>
+      <p class="sec-lead">Türk düğün gelenekleri düşünülerek tasarlandı. Hepsi editörden, kod yazmadan ayarlanır.</p>
+      <div class="feat-grid" id="features"></div>
+    </section>
+
+    <section class="sec alt" id="sablonlar">
+      <h2>Şablonlar</h2>
+      <p class="sec-lead">Bir şablonla başlayın; renkleri, yazı tiplerini, kapak düzenini ve efektleri dilediğiniz gibi değiştirin. Önizlemek için tıklayın.</p>
+      <div class="tpl-grid" id="templates"></div>
+    </section>
+
+    <section class="sec" id="nasil">
+      <h2>Üç adımda hazır</h2>
+      <ol class="steps">
+        <li><b>1</b><h3>Bilgileri girin</h3><p>Gelin ve damat adları, aileler, etkinlikler… Hazır senaryolardan (tek il, iki il, nikah + after…) biriyle saniyeler içinde başlayın.</p></li>
+        <li><b>2</b><h3>Tasarımı seçin</h3><p>12 şablondan birini seçin; renk, yazı tipi, zarf animasyonu, müzik ve fotoğraflarla kişiselleştirin. Değişiklikleri anında görün.</p></li>
+        <li><b>3</b><h3>Paylaşın</h3><p>Tek tıkla bağlantı oluşturun, misafirlerinize adlarıyla özel bağlantıları WhatsApp'tan gönderin veya QR kodu basılı davetiyeye ekleyin.</p></li>
+      </ol>
+      <div class="cta center"><a class="btn" href="editor.html">Hemen başla</a></div>
+    </section>
+
+    <section class="sec alt" id="sss">
+      <h2>Sık sorulanlar</h2>
+      <div class="faq">
+        <details><summary>Gerçekten ücretsiz mi?</summary><p>Evet. Proje MIT lisanslı ve açık kaynak. Sunucu, veritabanı veya üyelik gerekmez; GitHub Pages üzerinde ücretsiz yayınlanır.</p></details>
+        <details><summary>Bilgilerim nerede saklanıyor?</summary><p>Editördeki her şey yalnızca kendi tarayıcınızda saklanır. Davetiye bilgileri ya bağlantının içine gömülür ya da sizin yayınladığınız dosyada durur. Misafir listeniz hiçbir zaman davetiyeye eklenmez.</p></details>
+        <details><summary>İki farklı şehirde düğünüm var, olur mu?</summary><p>Tabii. İstediğiniz kadar etkinlik ekleyin, her birine ayrı şehir, saat ve konum verin. Davetiyede etkinlikler şehre göre gruplanır, her birinin kendi yol tarifi vardır.</p></details>
+        <details><summary>Bazı misafirler her etkinliği görmesin istiyorum.</summary><p>Misafir grupları oluşturun (Aile, Arkadaşlar…) ve etkinliği yalnızca o gruplara gösterin. Gruba özel bağlantıyla açan misafir sadece kendi etkinliklerini görür.</p></details>
+        <details><summary>Katılım (LCV) yanıtlarını nasıl toplarım?</summary><p>WhatsApp'a hazır mesaj, e-posta, Google E-Tablolar (otomatik liste), Formspree veya kendi Google Form bağlantınız. Seçim sizin.</p></details>
+        <details><summary>Kendi alan adımda yayınlayabilir miyim?</summary><p>Evet. "Tek dosya HTML" olarak indirip istediğiniz hostinge yükleyebilir ya da GitHub Pages'e kendi alan adınızı bağlayabilirsiniz.</p></details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="ld-foot">
+    <p><span class="script">Sevgiyle</span> açık kaynak olarak geliştirildi · MIT Lisansı</p>
+    <p><a href="editor.html">Editör</a> · <a href="davetiye.html?d=ornek">Örnek davetiye</a> <span id="ghFoot"></span></p>
+  </footer>
+
+  <script src="assets/js/core.js"></script>
+  <script src="assets/js/templates.js"></script>
+  <script>
+    (function () {
+      var DV = window.DV, esc = DV.esc, site = window.DV_SITE || {};
+      if (site.repoUrl) {
+        var gh = document.getElementById('ghLink');
+        gh.href = site.repoUrl; gh.hidden = false;
+        document.getElementById('ghFoot').innerHTML = ' · <a href="' + esc(site.repoUrl) + '">GitHub</a>';
+      }
+
+      var F = [
+        ['cal', 'Sınırsız etkinlik', 'Söz, nişan, kına, damat tıraşı, gelin alma, nikah, dini nikah, düğün, kokteyl, after party, mevlit, ertesi gün kahvaltısı…'],
+        ['pin', 'Haritadan konum', 'Mekanı arayın ya da haritada işaretleyin. Misafirler Google, Apple, Yandex veya Waze ile tek dokunuşla yol tarifi alır.'],
+        ['map', 'Tek il · iki il', 'Kız tarafı ve erkek tarafı düğünleri farklı şehirlerde mi? Etkinlikler şehre göre gruplanır.'],
+        ['users', 'Kişiye özel bağlantı', '"Sevgili Ahmet Bey" diye açılan davetiyeler. Gruplarla bazı etkinlikleri yalnızca belirli misafirlere gösterin.'],
+        ['mail', 'LCV toplama', 'WhatsApp, e-posta, Google E-Tablolar veya Formspree ile katılım bildirimi ve kişi sayısı.'],
+        ['clock', 'Geri sayım & takvim', 'Büyük güne kalan süre; Google Takvim ve Apple/Outlook (.ics) için tek tıkla takvime ekleme.'],
+        ['heart', 'Zarf animasyonu', 'Mühürlü zarfın açılmasıyla başlayan davetiye, isteğe bağlı arka plan müziği.'],
+        ['camera', 'Fotoğraf & hikaye', 'Kapak fotoğrafı, galeri, tanışma hikayeniz, alıntılar ve aile adları.'],
+        ['info', 'Bilmeniz gerekenler', 'Servis saatleri, otopark, konaklama, kıyafet kuralı ve IBAN / hediye bilgisi.'],
+        ['sparkle', 'Efektler', 'Gül yaprakları, kar, yıldızlar, ışıltı, ateş böcekleri… Her şablona uygun.'],
+        ['share', '3 yayın yöntemi', 'Bilgilerin içinde olduğu bağlantı, tek dosya HTML ya da GitHub deposunda JSON. QR kod dahil.'],
+        ['star', 'Türkçe & İngilizce', 'Tüm metinler, tarih biçimleri ve butonlar iki dilde. Türkçe karakter destekli yazı tipleri.']
+      ];
+      document.getElementById('features').innerHTML = F.map(function (f) {
+        return '<div class="feat"><span class="feat-ic">' + DV.icon(f[0]) + '</span><h3>' + esc(f[1]) + '</h3><p>' + esc(f[2]) + '</p></div>';
+      }).join('');
+
+      var fonts = [];
+      document.getElementById('templates').innerHTML = DV.TEMPLATES.map(function (t) {
+        var c = t.colors;
+        fonts.push(t.fonts.script, t.fonts.heading);
+        return '<a class="tpl" href="davetiye.html?d=ornek&amp;t=' + t.id + '" style="--accent:' + c.accent + ';--muted:' + c.muted + '">' +
+          '<span class="tpl-prev" style="background:' + c.bg + ';color:' + c.text + '">' +
+          '<span class="tpl-dc" style="color:' + c.primary + '">' + DV.renderDecor(t.decor.top || t.decor.divider) + '</span>' +
+          '<span class="tpl-names" style="font-family:' + esc(DV.fontStack(t.fonts.script, 'script')) + '">Elif &amp; Can</span>' +
+          '<span class="tpl-date" style="font-family:' + esc(DV.fontStack(t.fonts.heading, 'serif')) + ';color:' + c.primary + '">12 · 06 · 2027</span>' +
+          '</span><span class="tpl-meta"><strong>' + esc(t.name) + '</strong><span>' + esc(t.desc) + '</span></span></a>';
+      }).join('');
+      DV.loadFonts(fonts);
+    })();
+  </script>
+</body>
+</html>

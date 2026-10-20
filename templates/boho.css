@@ -1,0 +1,17 @@
+/* Boho Terrakota — toprak tonları, kemerler */
+body.dv[data-tpl="boho"] {
+  --radius: 20px;
+  --head-weight: 400;
+  --head-size: clamp(2.1rem, 8vw, 2.8rem);
+  --names-size: clamp(3.8rem, 17vw, 6.2rem);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.1' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.4 0 0 0 0 0.25 0 0 0 0 0.15 0 0 0 0.08 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+[data-tpl="boho"] .sec-title { font-style: italic; }
+[data-tpl="boho"] .names .amp { font-family: var(--f-head); font-style: italic; font-size: .32em; margin: .2em 0; }
+[data-tpl="boho"] .hero--arch .hero-photo::after { border-color: var(--accent); inset: -11px; }
+[data-tpl="boho"] .cd-u, [data-tpl="boho"] .info-card .info-ic { border-radius: 999px 999px 12px 12px; }
+[data-tpl="boho"] .cd-u { padding-top: 24px; background: color-mix(in srgb, var(--accent) 16%, var(--surface)); border-color: transparent; }
+[data-tpl="boho"] .ev { border-radius: 999px 999px var(--radius) var(--radius) / 120px 120px var(--radius) var(--radius); padding-top: 54px; }
+[data-tpl="boho"] .evs--timeline .ev { border-radius: 0; padding-top: 0; }
+[data-tpl="boho"] .evs--timeline .ev-datebox { border-radius: 999px 999px 10px 10px; background: color-mix(in srgb, var(--accent) 22%, var(--surface)); border-color: transparent; }
+[data-tpl="boho"] .st-date { background: color-mix(in srgb, var(--accent) 22%, transparent); border-color: transparent; }

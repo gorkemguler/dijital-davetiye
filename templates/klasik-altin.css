@@ -1,0 +1,25 @@
+/* Klasik Altın — krem kağıt, altın varak, çerçeveli kapak */
+body.dv[data-tpl="klasik-altin"] {
+  --radius: 3px;
+  --btn-radius: 2px;
+  --kicker-spacing: .42em;
+  --head-size: clamp(2.2rem, 8.4vw, 3rem);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.3 0 0 0 0 0.22 0 0 0 0 0.1 0 0 0 0.07 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"), radial-gradient(ellipse 80% 50% at 50% 0%, color-mix(in srgb, var(--accent) 45%, transparent), transparent 70%);
+}
+[data-tpl="klasik-altin"] .names span {
+  /* El yazısı kıvrımları satır kutusunun dışına taşar; dolgu ile gradyan alanını genişlet */
+  padding: .22em .24em;
+  margin: -.22em 0;
+  background: linear-gradient(100deg, color-mix(in srgb, var(--primary) 78%, #000) 0%, color-mix(in srgb, var(--primary) 45%, #fff) 30%, var(--primary) 52%, color-mix(in srgb, var(--primary) 38%, #fff) 70%, color-mix(in srgb, var(--primary) 82%, #000) 100%);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+[data-tpl="klasik-altin"] .sec-title { font-style: italic; }
+[data-tpl="klasik-altin"] .hero--frame .hero-inner { background: color-mix(in srgb, var(--surface) 82%, transparent); }
+[data-tpl="klasik-altin"] .ev { outline: 1px solid var(--line-soft); outline-offset: -8px; }
+[data-tpl="klasik-altin"] .ev-icon { border-radius: 2px; transform: rotate(45deg); width: 44px; height: 44px; margin-bottom: 18px; }
+[data-tpl="klasik-altin"] .ev-icon .ic { transform: rotate(-45deg); width: 22px; height: 22px; }
+[data-tpl="klasik-altin"] .cd-u { outline: 1px solid var(--line-soft); outline-offset: -5px; }
+[data-tpl="klasik-altin"] .signature {
+  background: linear-gradient(100deg, color-mix(in srgb, var(--primary) 78%, #000) 0%, color-mix(in srgb, var(--primary) 45%, #fff) 30%, var(--primary) 52%, color-mix(in srgb, var(--primary) 38%, #fff) 70%, color-mix(in srgb, var(--primary) 82%, #000) 100%);
+  -webkit-background-clip: text; background-clip: text; color: transparent; padding: .2em .24em; margin: calc(18px - .2em) 0 -.2em;
+}

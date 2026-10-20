@@ -1,0 +1,33 @@
+/* Art Deco — siyah, altın, geometri */
+body.dv[data-tpl="art-deco"] {
+  --radius: 0;
+  --btn-radius: 0;
+  --head-transform: uppercase;
+  --head-spacing: .22em;
+  --head-weight: 400;
+  --head-size: clamp(1.4rem, 5.6vw, 1.9rem);
+  --names-size: clamp(2.6rem, 11.5vw, 4.4rem);
+  --kicker-spacing: .55em;
+  --shadow: none;
+  background-image:
+    repeating-linear-gradient(45deg, transparent 0 26px, color-mix(in srgb, var(--primary) 6%, transparent) 26px 27px),
+    repeating-linear-gradient(-45deg, transparent 0 26px, color-mix(in srgb, var(--primary) 6%, transparent) 26px 27px);
+}
+[data-tpl="art-deco"] .names { text-transform: uppercase; letter-spacing: .06em; line-height: 1.08; }
+[data-tpl="art-deco"] .names span {
+  padding: .12em .1em;
+  margin: -.12em 0;
+  background: linear-gradient(100deg, color-mix(in srgb, var(--primary) 78%, #000) 0%, color-mix(in srgb, var(--primary) 45%, #fff) 30%, var(--primary) 52%, color-mix(in srgb, var(--primary) 38%, #fff) 70%, color-mix(in srgb, var(--primary) 82%, #000) 100%);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+[data-tpl="art-deco"] .names .amp { font-family: var(--f-head); font-size: .45em; margin: .25em 0; }
+[data-tpl="art-deco"] .hero--frame .hero-inner { background: color-mix(in srgb, var(--bg) 88%, transparent); border-color: var(--primary); outline-color: var(--line); outline-offset: 9px; }
+[data-tpl="art-deco"] .dc-top { width: min(250px, 72%); }
+[data-tpl="art-deco"] .ev { border: 1px solid var(--primary); outline: 1px solid var(--line); outline-offset: 5px; background: var(--surface); }
+[data-tpl="art-deco"] .ev-icon { border-radius: 0; transform: rotate(45deg); width: 44px; height: 44px; margin-bottom: 20px; }
+[data-tpl="art-deco"] .ev-icon .ic { transform: rotate(-45deg); width: 22px; height: 22px; }
+[data-tpl="art-deco"] .cd-u { border-color: var(--primary); }
+[data-tpl="art-deco"] .greet, [data-tpl="art-deco"] .quote, [data-tpl="art-deco"] .signature, [data-tpl="art-deco"] .env-letter span, [data-tpl="art-deco"] .parents-sep { font-family: var(--f-head); }
+[data-tpl="art-deco"] .signature { text-transform: uppercase; letter-spacing: .1em; font-size: clamp(1.6rem, 7vw, 2.2rem); }
+[data-tpl="art-deco"] .quote { font-size: clamp(1.15rem, 4.6vw, 1.4rem); letter-spacing: .04em; }
+[data-tpl="art-deco"] .env-seal { font-family: var(--f-head); font-size: 1.1rem; }

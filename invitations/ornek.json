@@ -1,0 +1,267 @@
+{
+  "v": 1,
+  "lang": "tr",
+  "timezone": "Europe/Istanbul",
+  "couple": {
+    "bride": {
+      "name": "Elif",
+      "surname": "Yıldız",
+      "parents": "Ayşe & Mehmet Yıldız"
+    },
+    "groom": {
+      "name": "Can",
+      "surname": "Aydın",
+      "parents": "Zeynep & Ali Aydın"
+    },
+    "order": "bride",
+    "photo": "",
+    "photoPos": "center",
+    "hashtag": "#ElifileCan"
+  },
+  "texts": {
+    "kicker": "",
+    "greeting": "",
+    "intro": "",
+    "quote": "Seninle her şey yeniden başlıyor.",
+    "quoteAuthor": "",
+    "familyLine": "",
+    "closing": "",
+    "signature": "Elif & Can"
+  },
+  "events": [
+    {
+      "id": "e1",
+      "type": "kina",
+      "title": "",
+      "date": "2027-06-11",
+      "start": "20:00",
+      "end": "23:59",
+      "venue": "Asmalı Bahçe",
+      "address": "Kazımdirik Mah., Bornova",
+      "city": "İzmir",
+      "lat": 38.4626,
+      "lng": 27.2167,
+      "host": "bride",
+      "dress": "Bordo & altın tonları",
+      "note": "",
+      "main": false,
+      "groups": [],
+      "hidden": false
+    },
+    {
+      "id": "e2",
+      "type": "gelinalma",
+      "title": "",
+      "date": "2027-06-12",
+      "start": "13:00",
+      "end": "",
+      "venue": "Gelin Evi",
+      "address": "Alsancak Mah., Konak",
+      "city": "İzmir",
+      "lat": 38.4386,
+      "lng": 27.1481,
+      "host": "",
+      "dress": "",
+      "note": "",
+      "main": false,
+      "groups": [],
+      "hidden": false
+    },
+    {
+      "id": "e3",
+      "type": "dugun",
+      "title": "Nikah & Düğün (Kız Tarafı)",
+      "date": "2027-06-12",
+      "start": "19:00",
+      "end": "23:30",
+      "venue": "Kordon Davet Bahçesi",
+      "address": "Atatürk Cad., Alsancak",
+      "city": "İzmir",
+      "lat": 38.4337,
+      "lng": 27.1428,
+      "host": "bride",
+      "dress": "Şık / Abiye",
+      "note": "",
+      "main": false,
+      "groups": [],
+      "hidden": false
+    },
+    {
+      "id": "e4",
+      "type": "dugun",
+      "title": "Erkek Tarafı Düğünü",
+      "date": "2027-06-19",
+      "start": "19:00",
+      "end": "23:59",
+      "venue": "Boğaz Davet Bahçesi",
+      "address": "Cevdetpaşa Cad., Bebek, Beşiktaş",
+      "city": "İstanbul",
+      "lat": 41.0766,
+      "lng": 29.0438,
+      "host": "groom",
+      "dress": "Şık / Abiye",
+      "note": "",
+      "main": true,
+      "groups": [],
+      "hidden": false
+    },
+    {
+      "id": "e5",
+      "type": "after",
+      "title": "",
+      "date": "2027-06-20",
+      "start": "00:30",
+      "end": "04:00",
+      "venue": "Teras Kulüp",
+      "address": "İstiklal Cad., Beyoğlu",
+      "city": "İstanbul",
+      "lat": 41.0335,
+      "lng": 28.9779,
+      "host": "",
+      "dress": "",
+      "note": "Sabaha kadar dans!",
+      "main": false,
+      "groups": [
+        "arkadaslar"
+      ],
+      "hidden": false
+    }
+  ],
+  "story": [
+    {
+      "date": "2019",
+      "title": "İlk tanışma",
+      "text": "Üniversite kütüphanesinde aynı kitaba uzandığımız gün."
+    },
+    {
+      "date": "2023",
+      "title": "İlk tatil",
+      "text": "Kaş'ta gün batımı ve sonsuz sohbetler."
+    },
+    {
+      "date": "2026",
+      "title": "Evlenme teklifi",
+      "text": "Kordon'da, ilk buluştuğumuz bankta \"Evet!\""
+    }
+  ],
+  "gallery": [],
+  "info": [
+    {
+      "icon": "bus",
+      "title": "Servis",
+      "text": "İstanbul düğünü için Kadıköy iskelesinden 18:00'de servis kalkacaktır.",
+      "link": "",
+      "linkText": ""
+    },
+    {
+      "icon": "parking",
+      "title": "Otopark",
+      "text": "Mekanlarda ücretsiz vale hizmeti bulunmaktadır.",
+      "link": "",
+      "linkText": ""
+    },
+    {
+      "icon": "hotel",
+      "title": "Konaklama",
+      "text": "Şehir dışından gelecek misafirlerimiz için anlaşmalı otel bilgisi için bize ulaşabilirsiniz.",
+      "link": "",
+      "linkText": ""
+    }
+  ],
+  "rsvp": {
+    "method": "whatsapp",
+    "whatsapp": "0532 000 00 00",
+    "email": "",
+    "endpoint": "",
+    "formUrl": "",
+    "deadline": "2027-05-20",
+    "askCount": true,
+    "maxCount": 10,
+    "askEvents": true,
+    "text": ""
+  },
+  "contacts": [
+    {
+      "name": "Ayşe Yıldız",
+      "role": "Gelinin annesi",
+      "phone": "0532 000 00 00"
+    },
+    {
+      "name": "Ali Aydın",
+      "role": "Damadın babası",
+      "phone": "0533 000 00 00"
+    }
+  ],
+  "gift": {
+    "text": "",
+    "accounts": []
+  },
+  "music": {
+    "url": "",
+    "title": "",
+    "autoplay": true
+  },
+  "design": {
+    "template": "klasik-altin",
+    "hero": "",
+    "eventsLayout": "",
+    "colors": {
+      "bg": "",
+      "text": "",
+      "primary": "",
+      "accent": ""
+    },
+    "fonts": {
+      "script": "",
+      "heading": "",
+      "body": ""
+    },
+    "envelope": true,
+    "effect": "auto",
+    "groupByCity": true,
+    "photoFilter": "",
+    "credit": true,
+    "sections": [
+      {
+        "id": "intro",
+        "on": true
+      },
+      {
+        "id": "countdown",
+        "on": true
+      },
+      {
+        "id": "events",
+        "on": true
+      },
+      {
+        "id": "story",
+        "on": true
+      },
+      {
+        "id": "gallery",
+        "on": true
+      },
+      {
+        "id": "info",
+        "on": true
+      },
+      {
+        "id": "rsvp",
+        "on": true
+      },
+      {
+        "id": "gift",
+        "on": true
+      },
+      {
+        "id": "contacts",
+        "on": true
+      },
+      {
+        "id": "closing",
+        "on": true
+      }
+    ]
+  }
+}
